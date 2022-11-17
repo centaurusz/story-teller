@@ -67,7 +67,7 @@ nav img{
 .text-box h1{
     font-size: 62px;
     font-family: 'Germania One', cursive;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
 }
 .text-box p{
     margin: 10px 0 40px;
@@ -221,5 +221,92 @@ blockquote{
     top: -150px;
     right: -70px;
     padding: 700px;
-    
+}
+.bg-arke{
+    position: absolute;
+    margin-left: 80px;
+    border: solid 1px;
+    border-color: #500c7a;
+}
+.arkemir-text{
+    position: absolute;
+    width: 355px;
+    height: auto;
+    margin-left: 65px;
+    margin-top: 380px;
+}
+.burning{
+    position: absolute;
+    margin-left: 400px;
+    border: solid 1px;
+    border-color: #500c7a;
+}
+.text-burn{
+    position: absolute;
+    width: 355px;
+    height: auto;
+    margin-left: 400px;
+    margin-top: 370px;
+}
+.odys{
+    position: absolute;
+    margin-left: 760px;
+    width: 379px;
+    height: auto;
+    border: solid 1px;
+    border-color: #500c7a;
+}
+.txt-od{
+    position: absolute;
+    width: 355px;
+    height: auto;
+    margin-left: 770px;
+    margin-top: 360px;
+}
+.bg-dead{
+    position: absolute;
+    margin-left: 1155px;
+    width: 320px;
+    height: auto;
+    border: solid 1px;
+    border-color: #500c7a;
+}
+.txt-dead{
+    position: absolute;
+    width: 355px;
+    height: auto;
+    margin-left: 1150px;
+    margin-top: 350px;
+}
+.next{
+    margin-left: 80%;
+    margin-top: 38%;
+    position: absolute;
+    border: solid 2px #500c7a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+.prev{
+    margin-left: 85%;
+    margin-top: 38%;
+    position: absolute;
+    border: solid 2px #500c7a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+.attributions{
+    max-width: 770px;
+    width: 90%;
+    margin-top: 800px;
+    margin-left: 200px;
+    position: relative;
+    z-index: 5;
 }
