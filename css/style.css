@@ -216,67 +216,78 @@ blockquote{
     text-align: center;
     margin-top: 300px;
 }
-.sword-1{
-    position: absolute;
-    top: -150px;
-    right: -70px;
-    padding: 700px;
+.slide-card {
+    width: 30%;
+    border: solid 3px #500c7a;
+    background: #fff;
+    height: 533px;
+    position: relative;
 }
-.bg-arke{
-    position: absolute;
-    margin-left: 80px;
-    border: solid 1px;
-    border-color: #500c7a;
+.slide-card a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
-.arkemir-text{
+.gradient{
+    background-image: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0));
+    height: 50%;
+    width: 100%;
     position: absolute;
-    width: 355px;
-    height: auto;
-    margin-left: 65px;
-    margin-top: 380px;
+    bottom: 0;
+    left: 0;
 }
-.burning{
-    position: absolute;
-    margin-left: 400px;
-    border: solid 1px;
-    border-color: #500c7a;
+.text{
+    bottom: 30px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
 }
-.text-burn{
-    position: absolute;
-    width: 355px;
-    height: auto;
-    margin-left: 400px;
-    margin-top: 370px;
+#Arkemyr{
+    background-image: url(../images/castleback.png);
+    background-position: 35% 50%;
+    background-size: cover;
 }
-.odys{
-    position: absolute;
-    margin-left: 760px;
-    width: 379px;
-    height: auto;
-    border: solid 1px;
-    border-color: #500c7a;
+#Arkemyr .text img {
+    bottom: 45px;
+    padding: 10px 25px;
 }
-.txt-od{
-    position: absolute;
-    width: 355px;
-    height: auto;
-    margin-left: 770px;
-    margin-top: 360px;
+#vale-card{
+    background-image: url(../images/burning.png);
+    background-size: 60% 50%;
+    background-size: cover;
 }
-.bg-dead{
-    position: absolute;
-    margin-left: 1155px;
-    width: 320px;
-    height: auto;
-    border: solid 1px;
-    border-color: #500c7a;
+#vale-card .text img{
+    max-width: 331px;
 }
-.txt-dead{
+#odys{
+    background-image: url(../images/odyshes.png);
+    background-position: 60% 50%;
+    background-size: cover;
+}
+#odys .text img{
+    max-width: 258px;
+}
+#dead{
+    background-image: url(../images/deadback.png);
+    background-position: 20% 50%;
+    background-size: cover;
+}
+#dead .text img{
+    max-width: 231px;
+}
+.prev{
+    margin-left: 85%;
+    margin-top: 38%;
     position: absolute;
-    width: 355px;
-    height: auto;
-    margin-left: 1150px;
-    margin-top: 350px;
+    border: solid 2px #500c7a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
 }
 .next{
     margin-left: 80%;
@@ -290,18 +301,21 @@ blockquote{
     height: 60px;
     cursor: pointer;
 }
-.prev{
-    margin-left: 85%;
-    margin-top: 38%;
-    position: absolute;
-    border: solid 2px #500c7a;
+.slide-navbar{
+    margin-top: 25px;
+    font-size: 24px;
+    color: #500c7a;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    height: 60px;
-    cursor: pointer;
-    content: "←";
+    justify-content: flex-end;
+}
+.slide-navbar a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+.campaign-slide-nav a:hover {
+    background-color: #500c7a;
+    color: #fff
 }
 #attributions{
     text-align: center;

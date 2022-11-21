@@ -71,37 +71,51 @@
 <div class="txt-cpg">
     <h2>&#9876;&#65039;Campaigns!&#9876;&#65039;</h2>
 </div>
-<div class="slider">
-    <div class="cpg-slider">
-        <div class="card-wrapper">
-        <div class="card">
-            <div class="img-box">
-                <img src="../story-teller/images/castleback.png" alt class="bg-arke">
-                <img src="../story-teller/images/arkymer.png" alt class="arkemir-text">
-                <div>
-                    <img src="../story-teller/images/burning.png" alt class="burning">
-                    <img src="../story-teller/images/vale.png" alt class="text-burn">
-                </div>
-                <div>
-                    <img src="../story-teller/images/odyshes.png" alt class="odys">
-                    <img src="../story-teller/images/odys.png" alt class="txt-od">
-                </div>
-                <div>
-                    <img src="../story-teller/images/deadback.png" alt class="bg-dead">
-                    <img src="../story-teller/images/dead.png" alt class="txt-dead">
-                </div>
-                <div class="slide-navbar">
-                    <div class="next">
-                        <i class="fa-regular fa-square-arrow-right"></i>
-                    </div>
-                    <div class="prev">
-                        <i class="fa-light fa-square-left"></i>
-                    </div>
-                </div>
+<div class="swiper slider">
+    <div class="swiper-wrapper slide-wrapper">
+        <div id="Arkemyr" class="swiper-slide slide-wrapper">
+            <div class="gradient"></div>
+            <a href="">
+                <span class="text">
+                    <img src="../story-teller/images/arkymer.png" alt=""></span></a>
+                
+        </div>
+        <div id="vale-card" class="swiper-slide slide-card">
+            <div class="gradient"></div>
+                <a href="">
+                    <span class="text">
+                        <img src="../story-teller/images/vale.png" alt="">
+                    </span>
+                </a>
+        </div>
+        <div id="odys" class="swiper-slide slide-card">
+            <div class="gradient"></div>
+                <a href="">
+                    <span class="text">
+                        <img src="../story-teller/images/odys.png" alt="">
+                    </span>
+                </a>
+        </div>
+        <div id="dead" class="swiper-slide slide-card">
+            <div class="gradient"></div>
+                <a href="">
+                    <span class="text">
+                        <img src="../story-teller/images/dead.png" alt="">
+                    </span>
+                </a>
+        </div>
+        <div class="slide-navbar">
+            <div class="slide-next">
+                <a href="#" class="next">&#8592;</a>
+            </div>
+            <div class="slide-prev">
+                <a href="#" class="prev">&#8594;</a>
             </div>
         </div>
-        </div>
     </div>
+</div>
+</div>
+</div>
 </div>
 <div id="attributions">
     <div class="attributions">
@@ -123,18 +137,33 @@
     , Dragon icons created by 
     <a href="https://www.flaticon.com/free-icons/dragon">Freepik - Flaticon</a>
 </div>
-<script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
 
-    var navLinks = document.getElementById("navLinks");
-
-    function showMenu(){
-        navLinks.style.right = "0";
-    }
-    function hideMenu(){
-        navLinks.style.right = "-200px";
-    }
-
-</script>
+    // Navigation arrows
+    navigation: {
+        nextEl: '.next',
+        prevEl: '.previous',
+    },
+    breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 45,
+                },
+            }
+        });</script>
 
 </body>
 </html>
