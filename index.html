@@ -73,7 +73,7 @@
 </div>
 <div class="swiper slider">
     <div class="swiper-wrapper slide-wrapper">
-        <div id="Arkemyr" class="swiper-slide slide-wrapper">
+        <div id="Arkemyr" class="swiper-slide slide-card">
             <div class="gradient"></div>
             <a href="">
                 <span class="text">
@@ -99,11 +99,13 @@
         <div id="dead" class="swiper-slide slide-card">
             <div class="gradient"></div>
                 <a href="">
-                    <span class="text">
+                    <div class="text">
                         <img src="../story-teller/images/dead.png" alt="">
-                    </span>
+                    </div>
                 </a>
         </div>
+    </div>
+</div>
         <div class="slide-navbar">
             <div class="slide-next">
                 <a href="#" class="next">&#8592;</a>
@@ -113,8 +115,6 @@
             </div>
         </div>
     </div>
-</div>
-</div>
 </div>
 </div>
 <div id="attributions">
@@ -138,18 +138,19 @@
     <a href="https://www.flaticon.com/free-icons/dragon">Freepik - Flaticon</a>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<script>const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    slidesPerView: 3,
-    spaceBetween: 30,
-    loop: true,
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: true,
 
-    // Navigation arrows
-    navigation: {
-        nextEl: '.next',
-        prevEl: '.previous',
-    },
-    breakpoints: {
+            // Navigation arrows
+            navigation: {
+                nextEl: '.next',
+                prevEl: '.prev',
+            },
+            breakpoints: {
                 640: {
                     slidesPerView: 2,
                     spaceBetween: 20,
@@ -163,7 +164,7 @@
                     spaceBetween: 45,
                 },
             }
-        });</script>
+            });</script>
 
 </body>
 </html>
