@@ -24,8 +24,8 @@
         <div class="nav-links">
             <i class="bi bi-x-lg" onclick="hideMenu()"></i>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#campaigns">Campaigns</a></li>
+                <li><a href="#inner">About</a></li>
+                <li><a href="#campaign">Campaigns</a></li>
                 <li><a href="#attributions">Attributions</a></li>
             </ul>
         </div>
@@ -47,6 +47,7 @@
     <div class="container">
         <img src="../story-teller/images/logo.png">
     </div>
+<div id="inner">
 <div class="inner-box">
     <div> 
     <h3>Welcome Adventurer!</h3>
@@ -64,13 +65,14 @@
         <img src="../story-teller/images/dice.png" alt class="dice">
 </div>
     </div>
-
+</div>
     </div>
 </div>
 
 <div class="txt-cpg">
     <h2>&#9876;&#65039;Campaigns!&#9876;&#65039;</h2>
 </div>
+<div id="campaign">
 <div class="swiper slider">
     <div class="swiper-wrapper slide-wrapper">
         <div id="Arkemyr" class="swiper-slide slide-card">
@@ -117,6 +119,7 @@
     </div>
 </div>
 </div>
+</div>
 <div id="attributions">
     <div class="attributions">
         <h3>Get Regular Updates From Us!</h3>
@@ -147,8 +150,8 @@
 
             // Navigation arrows
             navigation: {
-                nextEl: '.next',
-                prevEl: '.prev',
+                nextEl: '.prev',
+                prevEl: '.next',
             },
             breakpoints: {
                 640: {
